@@ -6,4 +6,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    defer-datasource-initialization: true # ??? ?? ?? data.sql ??
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
